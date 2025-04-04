@@ -2,11 +2,11 @@
 
 # Project Setup
 
-**Install react-icons** 
+**Install react-icons:** 
    npm install react-icons
 
-**Install Project Dependencies**
+**Install Project Dependencies:**
   npm install
 
-**Start Development Server** 
+**Start Development Server:** 
   npm run dev
