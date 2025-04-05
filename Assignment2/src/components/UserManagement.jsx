@@ -53,15 +53,9 @@ const UserManagement = () => {
     { id: 10, firstName: 'Hannah', lastName: '', email: 'hannah.purple@example.com', status: 'active', dob: '1996-12-03' },
   ]);
 
-  // Handle Edit button click (just a placeholder alert for now)
-  const handleEdit = (id) => {
-    alert(`Editing user with ID: ${id}`);
-  };
+ 
 
-  // Handle Delete button click: filters out the deleted user
-  const handleDelete = (id) => {
-    setUsers(users.filter(user => user.id !== id)); // Remove the user from the state
-  };
+ 
 
   return (
     <div className="p-6">
@@ -69,7 +63,7 @@ const UserManagement = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* Mapping over users to display UserCard for each user */}
         {users.map((user) => (
-          <UserCard key={user.id} user={user} onEdit={handleEdit} onDelete={handleDelete} />
+          <UserCard key={user.id} user={user}  />
         ))}
       </div>
     </div>
