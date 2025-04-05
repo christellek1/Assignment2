@@ -1,4 +1,4 @@
-import { FaMoon } from 'react-icons/fa';
+import { FiMoon } from 'react-icons/fi'; // Outlined moon icon from Feather
 
 const Navbar = () => {
   return (
@@ -20,8 +20,8 @@ const Navbar = () => {
           Logout
         </button>
 
-        {/* Moon icon for night mode */}
-        <FaMoon className="text-white text-base cursor-pointer" />
+        
+        <FiMoon className="text-white text-xl cursor-pointer" />
       </div>
     </nav>
   );
